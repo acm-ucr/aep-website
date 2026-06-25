@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --color-aep-green-100: #abcd75;
+  --color-aep-green-200: #97e291;
+
+  --color-aep-blue-100: #ddf1ff;
+  --color-aep-blue-200: #abd7f4;
+  --color-aep-blue-300: #b0d2f4;
+  --color-aep-blue-400: #83b6e6;
+  --color-aep-blue-500: #54abf9;
+
+  --color-aep-yellow-100: #fdf9ee;
+  --color-aep-yellow-200: #ffe4a0;
+  --color-aep-yellow-300: #fdc179;
+
+  --color-aep-red-100: #ffa780;
+  --color-aep-red-200: #fd967c;
+  --color-aep-red-300: #bc6e60;
+  --color-aep-red-400: #6c5051;
+
+  --color-aep-purple-100: #cfbfc7;
+
+  --font-aep-unna: "Unna";
+  --font-aep-urbanist: "Urbanist";
+}
