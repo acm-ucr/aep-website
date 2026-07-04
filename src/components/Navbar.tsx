@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 z-50 flex h-25 w-full items-center">
       <div className="flex flex-1 items-center p-4">
-        <Image src={AEPLogo} alt="AEP Logo" className="size-15 ml-6" />
+        <Image src={AEPLogo} alt="AEP Logo" className="ml-6 size-15" />
         <p className="ml-6 text-4xl font-extrabold whitespace-nowrap text-black">
           AEP
         </p>
