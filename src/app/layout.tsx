@@ -31,11 +31,11 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${unna.variable} ${urbanist.variable}`}>
       <body>
-        <Navbar/>
-        <ReactQueryClientProvider>{children}
-          <Footer/>
+        <Navbar />
+        <ReactQueryClientProvider>
+          {children}
+          <Footer />
         </ReactQueryClientProvider>
-        
       </body>
     </html>
   );
