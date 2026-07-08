@@ -1,14 +1,4 @@
-"use client";
-
-import Image, { StaticImageData } from "next/image";
-import { motion } from "motion/react";
-
-type galleryItem = {
-  name: string;
-  picture: StaticImageData;
-};
-
-const Carousel = ({ data }: { data: galleryItem[] }) => {
+const Carousel = () => {
   return (
     <div className="flex h-[25rem] w-[60rem] flex-col items-center justify-center bg-gray-300">
       <div className="flex flex-row gap-14">
