@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Unna, Urbanist } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const unna = Unna({
   subsets: ["latin"],
@@ -29,7 +31,11 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={`${unna.variable} ${urbanist.variable}`}>
       <body>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Navbar />
+        <ReactQueryClientProvider>
+          {children}
+          <Footer />
+        </ReactQueryClientProvider>
       </body>
     </html>
   );
