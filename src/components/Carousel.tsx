@@ -10,11 +10,14 @@ type galleryItem = {
 
 const Carousel = ({ data }: { data: galleryItem[] }) => {
   return (
-    <div className=" bg-gray-300 flex flex-col items-center justify-center w-[60rem] h-[25rem]">
+    <div className="flex h-[25rem] w-[60rem] flex-col items-center justify-center bg-gray-300">
       <div className="flex flex-row gap-14">
-        <div className="bg-white h-[21rem] w-[15rem] rounded-3xl"></div>
-        <div className="bg-white h-[21rem] w-[23rem] rounded-3xl flex justify-center items-center text-black text-3xl"> Carousel</div>
-        <div className="bg-white h-[21rem] w-[15rem] rounded-3xl"></div>
+        <div className="h-[21rem] w-[15rem] rounded-3xl bg-white"></div>
+        <div className="flex h-[21rem] w-[23rem] items-center justify-center rounded-3xl bg-white text-3xl text-black">
+          {" "}
+          Carousel
+        </div>
+        <div className="h-[21rem] w-[15rem] rounded-3xl bg-white"></div>
       </div>
     </div>
   );
