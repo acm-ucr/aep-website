@@ -1,13 +1,25 @@
-const Carousel = () => {
+"use client";
+
+import Image, { StaticImageData } from "next/image";
+
+type CarouselPic = {
+  name: string;
+  picture: StaticImageData;
+};
+
+const Carousel = ({ data }: { data: CarouselPic[] }) => {
   return (
-    <div className="flex h-[25rem] w-[60rem] flex-col items-center justify-center bg-gray-300">
-      <div className="flex flex-row gap-14">
-        <div className="h-[21rem] w-[15rem] rounded-3xl bg-white"></div>
-        <div className="flex h-[21rem] w-[23rem] items-center justify-center rounded-3xl bg-white text-3xl text-black">
-          {" "}
-          Carousel
-        </div>
-        <div className="h-[21rem] w-[15rem] rounded-3xl bg-white"></div>
+    <div className="flex h-7/12 w-3/4 flex-col items-center justify-center bg-gray-300 p-4 overflow-hidden">
+      <div className="flex flex-row h-full w-full items-center gap-x-12">
+        {data.map((item, index) => (
+          <div key={index} className="h-11/12 w-4/12 shrink-0">
+            <Image
+              src={item.picture}
+              alt={item.name}
+              className="h-full w-full rounded-3xl"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

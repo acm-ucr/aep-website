@@ -6,12 +6,12 @@ import gallery4 from "@/public/Home/Gallery4.webp";
 import gallery5 from "@/public/Home/Gallery5.webp";
 import mountains from "@/public/Home/mountains.webp";
 
-interface GalleryDataItem {
+interface GalleryItem {
   name: string;
   picture: StaticImageData;
 }
 
-export const galleryData: GalleryDataItem[] = [
+export const galleryData: GalleryItem[] = [
   { name: "gallery1", picture: gallery1 },
   { name: "gallery2", picture: gallery2 },
   { name: "gallery3", picture: gallery3 },
