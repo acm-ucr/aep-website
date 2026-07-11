@@ -4,7 +4,7 @@ import gallery2 from "@/public/Home/Gallery2.webp";
 import gallery3 from "@/public/Home/Gallery3.webp";
 import gallery4 from "@/public/Home/Gallery4.webp";
 import gallery5 from "@/public/Home/Gallery5.webp";
-import mountains from "@/public/Home/mountains.webp";
+import Carousel from "../Carousel";
 
 interface GalleryItem {
   name: string;
@@ -17,5 +17,14 @@ export const galleryData: GalleryItem[] = [
   { name: "gallery3", picture: gallery3 },
   { name: "gallery4", picture: gallery4 },
   { name: "gallery5", picture: gallery5 },
-  { name: "mountains", picture: mountains },
 ];
+
+const Gallery = () => {
+  return (
+    <div className="flex justify-center">
+      <Carousel data={galleryData} />
+    </div>
+  );
+};
+
+export default Gallery;
