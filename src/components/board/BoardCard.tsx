@@ -9,7 +9,7 @@ interface BoardCardProps {
 const BoardCard = ({ image, position, name }: BoardCardProps) => {
   return (
     <div className="font-aep-unna flex w-40 flex-col items-center border text-center text-lg shadow-lg">
-      <div className="h-32 w-32 overflow-hidden pt-8 pb-6">
+      <div className="h-1/2 w-1/2 overflow-hidden pt-8 pb-6">
         <Image
           src={image}
           alt={name}
