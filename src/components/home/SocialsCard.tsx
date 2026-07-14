@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { IconType } from "react-icons";
 interface SocialsCard {
   mediaName: string;
   url: string;
-  Icon: React.ComponentType;
+  Icon: IconType;
 }
 
 const SocialsCard = ({ mediaName, url, Icon }: SocialsCard) => {

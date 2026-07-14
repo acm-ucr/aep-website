@@ -2,11 +2,12 @@ import { IoMail } from "react-icons/io5";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import SocialsCard from "./SocialsCard";
+import { IconType } from "react-icons";
 
 interface SocialsItem {
   name: string;
   url: string;
-  Icon: React.ComponentType<{ className?: string }>;
+  Icon: IconType;
 }
 
 export const SocialsLinks: SocialsItem[] = [
