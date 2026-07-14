@@ -31,7 +31,12 @@ const Socials = ({ data }: { data: SocialsItem[] }) => {
   return (
     <div className="flex justify-center gap-x-24">
       {data.map((item, index) => (
-        <SocialsCard key={index} mediaName={item.name} url={item.url} Icon={item.Icon} />
+        <SocialsCard
+          key={index}
+          mediaName={item.name}
+          url={item.url}
+          Icon={item.Icon}
+        />
       ))}
     </div>
   );
