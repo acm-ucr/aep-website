@@ -28,10 +28,10 @@ export const SocialsLinks: SocialsItem[] = [
   },
 ];
 
-const Socials = ({ data }: { data: SocialsItem[] }) => {
+const Socials = () => {
   return (
     <div className="flex justify-center gap-x-24">
-      {data.map((item, index) => (
+      {SocialsLinks.map((item, index) => (
         <SocialsCard
           key={index}
           mediaName={item.name}
