@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { IconType } from "react-icons";
 import { SiLinktree } from "react-icons/si";
+import footerImage from "@/public/Footer.webp";
 
 interface FooterLink {
   name: string;
@@ -19,12 +21,10 @@ const footerLinks: FooterLink[] = [
 
 const Footer = () => {
   return (
-    <footer className="relative w-full overflow-hidden bg-transparent">
+    <div className="relative w-full overflow-hidden bg-transparent">
       <Image
-        src="/Footer.webp"
+        src={footerImage}
         alt="AEP UCR Inland Empire Chapter Footer"
-        width={1444}
-        height={636}
         priority
         className="block h-auto w-full"
       />
@@ -33,7 +33,7 @@ const Footer = () => {
         {footerLinks.map((link) => {
           const { Icon } = link;
           return (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               target="_blank"
@@ -44,11 +44,11 @@ const Footer = () => {
               <span className="text-1xl font-aep-urbanist mt-1 font-bold md:text-5xl">
                 {link.name}
               </span>
-            </a>
+            </Link>
           );
         })}
       </div>
-    </footer>
+    </div>
   );
 };
 
