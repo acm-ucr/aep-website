@@ -13,17 +13,17 @@ interface SocialsItem {
 export const SocialsLinks: SocialsItem[] = [
   {
     name: "Instagram",
-    url: "",
+    url: "https://www.instagram.com/aepucr/?hl=en",
     Icon: RiInstagramFill,
   },
   {
     name: "Email",
-    url: "",
+    url: "mailto:aepatucr@gmail.com",
     Icon: IoMail,
   },
   {
     name: "Linkedin",
-    url: "",
+    url: "https://www.linkedin.com/company/aepucr/",
     Icon: FaLinkedin,
   },
 ];
