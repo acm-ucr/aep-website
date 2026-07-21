@@ -1,7 +1,7 @@
-import Landing from "@/components/home/Landing";
+import BoardPhoto from "@/components/board/BoardPhoto";
 
 const Home = () => {
-  return <Landing />;
+  return <BoardPhoto />;
 };
 
 export default Home;
