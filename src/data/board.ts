@@ -1,96 +1,64 @@
-import Barbara from "@/public/Board/Barbara Nieves - 25-26 Director of Marketing - Junior - Environmental Sciences.webp";
-import Jasmine from "@/public/Board/Jasmine Lai - 25-26 Vice President - Senior - Environmental Engineering_.webp";
-import Keanny from "@/public/Board/Keanny Jimenez - 25-26 Co-Director of Outreach - Senior - Environmental Sciences.webp";
-import Matisse from "@/public/Board/Matisse Rios - 25-26 Treasurer - Junior - Environmental Engineering.webp";
-import Rahma from "@/public/Board/Rahma Ahmed - 25-26 Director of Events - Junior - Environmental Sciences.webp";
-import Rohan from "@/public/Board/Rohan Vig - 25-26 President - Junior - Environmental Sciences & Public Policy.webp";
-import Sachi from "@/public/Board/Sachi Bhanji - 25-26 Director of Membership - Junior - Environmental Sciences.webp";
-import Shawn from "@/public/Board/Shawn Felisilda - 25-26 Co Director of Outreach - Senior Environmental Engineering.webp";
-import Skaila from "@/public/Board/Skaila Sirdeshpande - 25-26 Secretary - Sophmore - Environmental Sciences.webp";
+import type { StaticImageData } from "next/image";
+import Board1 from "@/public/Board/Rohan Vig - 25-26 President - Junior - Environmental Sciences & Public Policy.webp";
+import Board2 from "@/public/Board/Jasmine Lai - 25-26 Vice President - Senior - Environmental Engineering_.webp";
+import Board3 from "@/public/Board/Skaila Sirdeshpande - 25-26 Secretary - Sophmore - Environmental Sciences.webp";
+import Board4 from "@/public/Board/Matisse Rios - 25-26 Treasurer - Junior - Environmental Engineering.webp";
+import Board5 from "@/public/Board/Rahma Ahmed - 25-26 Director of Events - Junior - Environmental Sciences.webp";
+import Board6 from "@/public/Board/Barbara Nieves - 25-26 Director of Marketing - Junior - Environmental Sciences.webp";
+import Board7 from "@/public/Board/Sachi Bhanji - 25-26 Director of Membership - Junior - Environmental Sciences.webp";
+import Board8 from "@/public/Board/Keanny Jimenez - 25-26 Co-Director of Outreach - Senior - Environmental Sciences.webp";
+import Board9 from "@/public/Board/Shawn Felisilda - 25-26 Co Director of Outreach - Senior Environmental Engineering.webp";
 
-export const boardImages = {
-  Barbara,
-  Jasmine,
-  Keanny,
-  Matisse,
-  Rahma,
-  Rohan,
-  Sachi,
-  Shawn,
-  Skaila,
-};
+interface BoardProp {
+  image: StaticImageData;
+  position: string;
+  name: string;
+}
 
-const board = [
+export const BoardProps: BoardProp[] = [
   {
-    title: "Executive",
-    members: [
-      {
-        name: "Rohan Vig",
-        position: "President",
-        image: Rohan,
-      },
-      {
-        name: "Jasmine Lai",
-        position: "Vice President",
-        image: Jasmine,
-      },
-      {
-        name: "Skaila Sirdeshpande",
-        position: "Secretary",
-        image: Skaila,
-      },
-    ],
+    image: Board1,
+    position: "President",
+    name: "Rohan Vig",
   },
   {
-    title: "Marketing",
-    members: [
-      {
-        name: "Barbara Nieves",
-        position: "Director of Marketing",
-        image: Barbara,
-      },
-    ],
+    image: Board2,
+    position: "Vice President",
+    name: "Jasmine Lai",
   },
   {
-    title: "Events",
-    members: [
-      {
-        name: "Rahma Ahmed",
-        position: "Director of Events",
-        image: Rahma,
-      },
-    ],
+    image: Board3,
+    position: "Secretary",
+    name: "Skaila Sirdeshpande",
   },
   {
-    title: "External Relationships",
-    members: [
-      {
-        name: "Keanny Jimenez",
-        position: "Co-Director of Outreach",
-        image: Keanny,
-      },
-      {
-        name: "Shawn Felisilda",
-        position: "Co-Director of Outreach",
-        image: Shawn,
-      },
-    ],
+    image: Board4,
+    position: "Treasurer",
+    name: "Matisse Rios",
   },
   {
-    title: "Finance and Membership",
-    members: [
-      {
-        name: "Matisse Rios",
-        position: "Treasurer",
-        image: Matisse,
-      },
-      {
-        name: "Sachi Bhanji",
-        position: "Director of Membership",
-        image: Sachi,
-      },
-    ],
+    image: Board5,
+    position: "Director of Events",
+    name: "Rahma Ahmed",
+  },
+  {
+    image: Board6,
+    position: "Director of Marketing",
+    name: "Barbara Nieves",
+  },
+  {
+    image: Board7,
+    position: "Director of Membership",
+    name: "Sachi Bhanji",
+  },
+  {
+    image: Board8,
+    position: "Director of Outreach",
+    name: "Keanny Jimenez",
+  },
+  {
+    image: Board9,
+    position: "Director of Outreach",
+    name: "Shawn Felisilda",
   },
 ];
-
-export default board;
