@@ -11,50 +11,40 @@ const BoardPhoto = () => {
         2025-2026
       </h1>
 
-      <div className="relative overflow-visible">
+      <div className="relative flex items-center justify-center overflow-visible">
         {/* Board Photo */}
         <Image
           src={Board}
           alt="2025-2026 Board Group Photo"
-          width={987}
-          height={658}
-          className="relative z-10"
+          className="relative z-10 w-4/5"
         />
 
         {/* Leaf */}
         <Image
           src={Leaf}
           alt="Leaf Decoration"
-          width={440}
-          height={490}
-          className="absolute -top-62 -right-32 z-20"
+          className="absolute -top-32 -right-4 z-20 w-1/4"
         />
 
         {/* Top Left Tape */}
         <Image
           src={Tape}
           alt="Top Left Tape Decoration"
-          width={374}
-          height={90}
-          className="absolute -top-20 -left-35 z-30 rotate-[-20deg] opacity-80"
+          className="absolute -top-5 left-5 z-30 w-1/5"
         />
 
         {/* Bottom Right Tape */}
         <Image
           src={Tape}
           alt="Bottom Right Tape Decoration"
-          width={374}
-          height={90}
-          className="absolute -right-35 -bottom-25 z-30 rotate-[-25deg] opacity-80"
+          className="absolute right-5 -bottom-10 z-30 w-1/5"
         />
 
         {/* Magnifying Glass */}
         <Image
           src={MagnifyingGlass}
           alt="Magnifying Glass Decoration"
-          width={416}
-          height={507}
-          className="<!--top-[320px]--> absolute -bottom-48 -left-52 z-20"
+          className="absolute -bottom-24 -left-0 z-20 w-1/4"
         />
       </div>
     </div>

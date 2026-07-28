@@ -1,5 +1,7 @@
+import BoardPhoto from "@/components/board/BoardPhoto";
+
 const Page = () => {
-  return <div>page</div>;
+  return <BoardPhoto />;
 };
 
 export default Page;

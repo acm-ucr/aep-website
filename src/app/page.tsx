@@ -1,7 +1,13 @@
-import BoardPhoto from "@/components/board/BoardPhoto";
+import Landing from "@/components/home/Landing";
+import Socials from "@/components/home/Socials";
 
 const Home = () => {
-  return <BoardPhoto />;
+  return (
+    <>
+      <Landing />
+      <Socials />
+    </>
+  );
 };
 
 export default Home;
