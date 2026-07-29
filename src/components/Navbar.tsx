@@ -27,9 +27,13 @@ const Navbar = () => {
     <div className="font-aep-urbanist fixed z-10 flex h-25 w-full items-center border-b-2 bg-white">
       <div className="flex flex-1 items-center p-4">
         <Link href="/" className="flex">
-          <Image src={AEPLogo} alt="AEP Logo" className="ml-6 size-15" />
+          <Image
+            src={AEPLogo}
+            alt="AEP Logo"
+            className="ml-2 size-12 md:ml-6 md:size-15"
+          />
         </Link>
-        <p className="ml-6 text-4xl font-extrabold whitespace-nowrap text-black">
+        <p className="ml-4 text-3xl font-extrabold whitespace-nowrap text-black md:ml-6 md:text-4xl">
           AEP
         </p>
       </div>
