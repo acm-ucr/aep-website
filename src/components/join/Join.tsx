@@ -11,13 +11,13 @@ const Join = () => {
   const GROUPME_URL = "https://groupme.com/join_group/109731630/ApjU7A0t";
 
   return (
-    <div className="relative flex min-h-[170vh] flex-col items-center justify-start bg-[#a18866]">
-      <div className="absolute inset-x-0 top-0 z-0 h-[66.6%] bg-gradient-to-b from-[#d6969a] via-[#efa281] to-[#f9ee79]" />
+    <div className="bg-aep-sand-500 relative flex min-h-[170vh] flex-col items-center justify-start">
+      <div className="from-aep-rose-300 via-aep-peach-300 to-aep-yellow-400 absolute inset-x-0 top-0 z-0 h-[66.6%] bg-gradient-to-b" />
       <div className="absolute top-3/10 z-10 h-50 w-50">
         <Image src={Sun} alt="Sun" fill className="object-contain" />
       </div>
 
-      <div className="absolute inset-0 bottom-5 z-20">
+      <div className="absolute inset-0 bottom-5">
         <Image
           src={Trees}
           alt="Trees"
@@ -26,13 +26,13 @@ const Join = () => {
         />
       </div>
 
-      <div className="relative z-40 mt-40 px-4 text-center">
+      <div className="relative mt-40 px-4 text-center">
         <h1 className="font-aep-unna text-9xl font-bold text-white">
           Get Involved
         </h1>
       </div>
 
-      <div className="absolute inset-x-0 bottom-5 z-30 mx-auto flex max-w-7xl justify-between">
+      <div className="absolute inset-x-0 bottom-5 z-10 mx-auto flex max-w-7xl justify-between">
         <div className="pointer-events-auto relative h-120 w-120">
           <Link href={JOIN_FORM_URL} target="_blank" rel="noopener noreferrer">
             <Image
@@ -42,7 +42,7 @@ const Join = () => {
               className="object-contain"
             />
             <div className="absolute inset-0 flex items-center justify-center pr-4 pb-45">
-              <span className="font-aep-urbanist text-8xl font-bold text-[#FFDD00]">
+              <span className="font-aep-urbanist text-aep-yellow-500 text-8xl font-bold">
                 Join Here
               </span>
             </div>
@@ -58,7 +58,7 @@ const Join = () => {
               className="object-contain"
             />
             <div className="absolute inset-0 flex items-center justify-center pb-45 pl-7">
-              <span className="font-aep-urbanist text-8xl font-bold text-[#FFDD00]">
+              <span className="font-aep-urbanist text-aep-yellow-500 text-8xl font-bold">
                 GroupMe
               </span>
             </div>
