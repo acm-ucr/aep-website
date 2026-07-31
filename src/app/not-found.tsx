@@ -1,10 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import desert from "@/public/desert.webp";
+import desertMobile from "@/public/desertMobile.webp";
 
 const NotFound = () => {
   return (
     <div className="bg-aep-blue-300 relative isolate z-0 flex min-h-screen items-center justify-center overflow-hidden">
-      <Image className="z-10 mt-30" src="/desert.webp" alt="error" fill></Image>
+      <Image
+        className="z-10 mt-30 sm:hidden"
+        src={desertMobile}
+        alt="error"
+        fill
+      />
+      <Image
+        className="z-10 mt-30 hidden sm:block"
+        src={desert}
+        alt="error"
+        fill
+      />
       <div className="font-aep-unna absolute -mt-20 flex flex-col items-center justify-center gap-2 sm:gap-3">
         <p className="z-20 text-7xl font-extrabold text-orange-600 [-webkit-text-stroke:1.2px_white] sm:text-8xl sm:[-webkit-text-stroke:1.7px_white] md:text-9xl">
           404
