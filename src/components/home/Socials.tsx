@@ -4,8 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import SocialsCard from "./SocialsCard";
 import { IconType } from "react-icons";
 import Image from "next/image";
-import background from '../../../public/Home/mountains.webp';
-
+import background from "../../../public/Home/mountains.webp";
 
 interface SocialsItem {
   name: string;
@@ -34,14 +33,14 @@ export const SocialsLinks: SocialsItem[] = [
 const Socials = () => {
   return (
     <div className="relativ pb-160">
-      <div className= "min-h-screen">
-      <Image
-        className="absolute w-full h-auto object-cover"
-        src={background}
-        alt="socials"
-      />
+      <div className="min-h-screen">
+        <Image
+          className="absolute h-auto w-full object-cover"
+          src={background}
+          alt="socials"
+        />
       </div>
-      <div className="font-aep-urbanist pb-45 relative text-center text-5xl font-bold text-white">
+      <div className="font-aep-urbanist relative pb-45 text-center text-5xl font-bold text-white">
         <p>...to enhance, maintain and protect the quality of </p>
         <p>the natural and human environment.</p>
       </div>
@@ -56,7 +55,6 @@ const Socials = () => {
           />
         ))}
       </div>
-     
     </div>
   );
 };
