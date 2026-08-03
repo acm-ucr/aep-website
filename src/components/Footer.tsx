@@ -21,12 +21,12 @@ const footerLinks: FooterLink[] = [
 
 const Footer = () => {
   return (
-    <div className="relative w-full overflow-hidden bg-transparent">
+    <div className="relative -mt-24 w-full overflow-hidden bg-transparent">
       <Image
         src={footerImage}
         alt="AEP UCR Inland Empire Chapter Footer"
         priority
-        className="block h-auto w-full"
+        className="block h-auto w-full [mask-image:linear-gradient(to_top,rgba(0,0,0,1)_90%,rgba(0,0,0,0)_100%)]"
       />
 
       <div className="absolute right-[3%] bottom-[3%] z-20 flex gap-6">
@@ -40,8 +40,8 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-col items-center justify-center text-white"
             >
-              <Icon className="h-10 w-10 md:h-25 md:w-25" />
-              <span className="text-1xl font-aep-urbanist mt-1 font-bold md:text-5xl">
+              <Icon className="h-10 w-10 md:h-14 md:w-20 lg:h-20 lg:w-24" />
+              <span className="text-1xl font-aep-urbanist mt-1 font-bold md:text-3xl lg:text-5xl">
                 {link.name}
               </span>
             </Link>
