@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className="from-aep-blue-100 to-aep-blue-500 relative flex h-auto flex-col overflow-hidden bg-gradient-to-br">
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-8 pt-28 md:items-start md:justify-start md:gap-12 md:px-10 md:pt-52 md:text-left">
-        <div className="font-aep-unna text-center text-5xl font-bold text-black md:mt-5 md:-mb-32 lg:-mb-52 md:text-7xl">
+        <div className="font-aep-unna text-center text-5xl font-bold text-black md:mt-5 md:-mb-32 md:text-7xl lg:-mb-52">
           About Us
         </div>
         <div className="flex items-center pt-5 pb-20 md:space-x-5">
