@@ -32,7 +32,7 @@ export const SocialsLinks: SocialsItem[] = [
 
 const Socials = () => {
   return (
-    <div className="relative pb-160">
+    <div className="relative pb-72">
       <div className="min-h-screen">
         <Image
           className="absolute h-auto w-full object-cover"
