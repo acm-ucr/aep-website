@@ -23,7 +23,7 @@ const BoardPhoto = () => {
         <Image
           src={Leaf}
           alt="Leaf Decoration"
-          className="absolute -top-32 -right-4 z-[2] w-1/4"
+          className="absolute -top-32 -right-4 z-[2] hidden w-1/4 lg:block"
         />
 
         {/* Top Left Tape */}
