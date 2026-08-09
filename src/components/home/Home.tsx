@@ -5,7 +5,7 @@ import Socials from "@/components/home/Socials";
 
 const Home = () => {
   return (
-    <main className="bg-gradient-to-b from-aep-blue-300 to-aep-red-100 pt-36 md:pt-40">
+    <main className="from-aep-blue-300 to-aep-red-100 bg-gradient-to-b pt-36 md:pt-40">
       <Header />
       <Landing />
       <Gallery />
