@@ -1,13 +1,5 @@
-import Landing from "@/components/home/Landing";
-import Socials from "@/components/home/Socials";
+import Home from "@/components/home/Home";
 
-const Home = () => {
-  return (
-    <>
-      <Landing />
-      <Socials />
-    </>
-  );
-};
-
-export default Home;
+export default function Page() {
+  return <Home />;
+}
