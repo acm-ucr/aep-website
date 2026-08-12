@@ -6,8 +6,8 @@ import Tape from "@/public/Board/tape.webp";
 
 const BoardPhoto = () => {
   return (
-    <div className="flex flex-col items-center py-20">
-      <h1 className="font-aep-urbanist relative z-[1] px-2 py-4 text-center text-7xl font-bold text-black">
+    <div className="flex flex-col items-center py-60">
+      <h1 className="font-aep-urbanist relative z-[1] px-2 py-4 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl lg:text-7xl">
         2025-2026
       </h1>
 
