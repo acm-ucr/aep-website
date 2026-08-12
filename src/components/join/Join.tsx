@@ -32,7 +32,7 @@ const Join = () => {
         </h1>
       </div>
 
-      <div className="absolute inset-x-0 bottom-5 z-10 mx-auto flex max-w-7xl justify-between">
+      <div className="absolute inset-x-0 bottom-5 z-8 mx-auto flex max-w-7xl justify-between">
         <div className="pointer-events-auto relative h-120 w-120">
           <Link href={JOIN_FORM_URL} target="_blank" rel="noopener noreferrer">
             <Image
