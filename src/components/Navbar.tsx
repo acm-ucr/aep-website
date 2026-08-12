@@ -4,7 +4,7 @@ import AEPLogo from "@/public/Logo.webp";
 
 const Navbar = () => {
   return (
-    <div className="font-aep-urbanist fixed z-10 flex h-25 w-full items-center">
+    <div className="font-aep-urbanist  z-10 flex h-25 w-full items-center">
       <div className="flex flex-1 items-center p-4">
         <Link href="/" className="flex">
           <Image src={AEPLogo} alt="AEP Logo" className="ml-6 size-15" />
