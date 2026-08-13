@@ -13,6 +13,8 @@
   --color-aep-yellow-100: #fdf9ee;
   --color-aep-yellow-200: #ffe4a0;
   --color-aep-yellow-300: #fdc179;
+  --color-aep-yellow-400: #f9ee79;
+  --color-aep-yellow-500: #ffdd00;
 
   --color-aep-red-100: #ffa780;
   --color-aep-red-200: #fd967c;
@@ -20,6 +22,10 @@
   --color-aep-red-400: #6c5051;
 
   --color-aep-purple-100: #cfbfc7;
+
+  --color-aep-sand-500: #a18866;
+  --color-aep-rose-300: #d6969a;
+  --color-aep-peach-300: #efa281;
 
   --font-aep-unna: "Unna";
   --font-aep-urbanist: "Urbanist";
