@@ -1,4 +1,8 @@
+"use client";
 import Link from "next/link";
+import { motion } from "motion/react";
+
+const MotionLink = motion.create(Link);
 
 const Landing = () => {
   return (
@@ -9,19 +13,27 @@ const Landing = () => {
       </p>
 
       <div className="flex gap-12">
-        <Link
+        <MotionLink
           href="/about"
+          initial={{ opacity: 0, transform: "translate(-50px, 0)" }}
+          whileInView={{ opacity: 1, transform: "translate(0, 0)" }}
+          transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
           className="bg-aep-green-200 flex h-20 w-32 items-center justify-center rounded-2xl px-1 py-2 text-3xl font-normal text-black drop-shadow-lg transition hover:brightness-95 md:h-[150px] md:w-[350px] md:rounded-4xl md:px-2 md:py-4 md:text-[70px]"
         >
           About
-        </Link>
+        </MotionLink>
 
-        <Link
+        <MotionLink
           href="/join"
+          initial={{ opacity: 0, transform: "translate(50px, 0)" }}
+          whileInView={{ opacity: 1, transform: "translate(0, 0)" }}
+          transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
           className="bg-aep-green-200 flex h-20 w-32 items-center justify-center rounded-2xl px-1 py-2 text-3xl font-normal text-black drop-shadow-lg transition hover:brightness-95 md:h-[150px] md:w-[350px] md:rounded-4xl md:px-2 md:py-4 md:text-[70px]"
         >
           Join
-        </Link>
+        </MotionLink>
       </div>
     </div>
   );
