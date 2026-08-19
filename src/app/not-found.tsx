@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import desert from "@/public/desert.webp";
 import desertMobile from "@/public/desertMobile.webp";
+import { motion } from "framer-motion";
 
 const NotFound = () => {
   return (
@@ -19,18 +21,33 @@ const NotFound = () => {
         fill
       />
       <div className="font-aep-unna absolute -mt-20 flex flex-col items-center justify-center gap-2 sm:gap-3">
-        <p className="z-20 text-7xl font-extrabold text-orange-600 [-webkit-text-stroke:1.2px_white] sm:text-8xl sm:[-webkit-text-stroke:1.7px_white] md:text-9xl">
-          404
-        </p>
-        <p className="z-20 text-5xl font-extrabold text-orange-600 [-webkit-text-stroke:1.2px_white] sm:text-7xl sm:[-webkit-text-stroke:1.7px_white] md:text-8xl">
-          ERROR
-        </p>
-        <Link
-          href="/"
-          className="z-10 mt-6 rounded-3xl bg-orange-950 p-4 text-4xl text-white mix-blend-multiply sm:mt-10 sm:rounded-4xl sm:p-5 sm:text-6xl md:text-8xl"
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="z-10 text-center"
         >
-          HOME
-        </Link>
+          <p className="z-20 text-7xl font-extrabold text-orange-600 [-webkit-text-stroke:1.2px_white] sm:text-8xl sm:[-webkit-text-stroke:1.7px_white] md:text-9xl">
+            404
+          </p>
+          <p className="z-20 text-5xl font-extrabold text-orange-600 [-webkit-text-stroke:1.2px_white] sm:text-7xl sm:[-webkit-text-stroke:1.7px_white] md:text-8xl">
+            ERROR
+          </p>
+        </motion.div>
+
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          animate={{ scale: 1, opacity: 1 }}
+          whileTap={{ scale: 1.08 }}
+          className="z-10 py-10"
+        >
+          <Link
+            href="/"
+            className="mt-6 rounded-3xl bg-orange-950 p-4 text-4xl text-white mix-blend-multiply sm:mt-10 sm:rounded-4xl sm:p-5 sm:text-6xl md:text-8xl"
+          >
+            HOME
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
