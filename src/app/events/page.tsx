@@ -1,10 +1,8 @@
-import EventsGallery from "@/components/events/EventsGallery";
-import Calendar from "@/components/events/Calendar";
+import CalendarPage from "@/components/events/CalendarPage";
 const Page = () => {
   return (
-    <div className="">
-      <Calendar />
-      <EventsGallery />
+    <div>
+      <CalendarPage />
      
     </div>
   );

@@ -125,24 +125,24 @@ const Calendar = () => {
   });
 
   return (
-    <div className=" relative m-16 mx-auto w-full max-w-5xl rounded-2xl border">
+    <div className="relative mx-auto lg:w-full w-9/10 max-w-5xl rounded-2xl border bg-white">
       <div className="mb-4 flex items-center justify-center text-black font-aep-urbanist">
         <button
           onClick={() => changeMonth(-1)}
           aria-label="Previous month"
           className="hover:text-aep-blue-200  p-2 transition-colors cursor-pointer"
         >
-          <ChevronLeft className="size-16" />
+          <ChevronLeft className="md:size-16 size-14" />
         </button>
-        <h3 className="text-6xl font-bold tracking-wide">
+        <div className="md:text-6xl text-4xl font-bold tracking-wide">
           {monthLabel} {year}
-        </h3>
+        </div>
         <button
           onClick={() => changeMonth(1)}
           aria-label="Next month"
           className="hover:text-aep-blue-200 p-2 transition-colors cursor-pointer"
         >
-          <ChevronRight className="size-16" />
+          <ChevronRight className="md:size-16 size-14" />
         </button>
       </div>
 
@@ -154,7 +154,7 @@ const Calendar = () => {
         ))}
       </div>
 
-      <div className=" grid grid-cols-7 overflow-hidden rounded-md ">
+      <div className=" grid grid-cols-7 overflow-hidden rounded-md bg-white ">
         {cells.map((date) => {
           const key = toKey(date);
           const inMonth = date.getMonth() === month;
