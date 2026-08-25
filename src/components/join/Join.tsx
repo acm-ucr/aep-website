@@ -11,9 +11,9 @@ const Join = () => {
   const GROUPME_URL = "https://groupme.com/join_group/109731630/ApjU7A0t";
 
   return (
-    <div className="bg-aep-sand-500 relative flex max-h-screen flex-col items-center justify-start md:min-h-[170vh]">
+    <div className="bg-aep-sand-500 relative flex flex-col items-center justify-start md:min-h-[170vh]">
       <div className="from-aep-rose-300 via-aep-peach-300 to-aep-yellow-400 absolute inset-x-0 top-0 z-0 h-3/5 bg-gradient-to-b md:h-[66.6%]" />
-      <div className="absolute top-72 z-10 h-20 w-20 pt-16 md:top-3/10 md:h-50 md:w-50 md:pt-0">
+      <div className="absolute top-72 h-20 w-20 pt-16 md:top-3/10 md:h-50 md:w-50 md:pt-0">
         <Image src={Sun} alt="Sun" fill className="object-contain" />
       </div>
 
