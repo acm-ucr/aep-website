@@ -32,28 +32,26 @@ export const SocialsLinks: SocialsItem[] = [
 
 const Socials = () => {
   return (
-    <div className="relative pb-72">
-      <div className="min-h-screen">
-        <Image
-          className="absolute h-auto w-full object-cover"
-          src={background}
-          alt="socials"
-        />
-      </div>
-      <div className="font-aep-urbanist relative pb-45 text-center text-5xl font-bold text-white">
-        <p>...to enhance, maintain and protect the quality of </p>
-        <p>the natural and human environment.</p>
-      </div>
+    <div className="relative pb-40 md:pb-72">
+      <div className="relative flex min-h-[32rem] flex-col items-center justify-center md:min-h-screen">
+        <Image className="object-cover" src={background} alt="socials" fill />
+        <div className="font-aep-urbanist relative px-8 pb-8 text-center text-xl font-bold text-white md:px-4 md:pb-45 md:text-5xl">
+          <p>
+            ...to enhance, maintain and protect the quality of the natural and
+            human environment.
+          </p>
+        </div>
 
-      <div className="relative flex justify-center gap-x-24">
-        {SocialsLinks.map((item, index) => (
-          <SocialsCard
-            key={index}
-            mediaName={item.name}
-            url={item.url}
-            Icon={item.Icon}
-          />
-        ))}
+        <div className="relative flex w-full max-w-xs justify-evenly md:max-w-none md:justify-center md:gap-x-24">
+          {SocialsLinks.map((item, index) => (
+            <SocialsCard
+              key={index}
+              mediaName={item.name}
+              url={item.url}
+              Icon={item.Icon}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
