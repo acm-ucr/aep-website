@@ -1,9 +1,8 @@
-import EventsGallery from "@/components/events/EventsGallery";
-
+import CalendarPage from "@/components/events/CalendarPage";
 const Page = () => {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <EventsGallery />
+    <div>
+      <CalendarPage />
     </div>
   );
 };
