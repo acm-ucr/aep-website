@@ -21,7 +21,7 @@ const footerLinks: FooterLink[] = [
 
 const Footer = () => {
   return (
-    <div className="relative -mt-24 w-full overflow-hidden bg-transparent">
+    <div className="relative z-20 -mt-24 w-full overflow-hidden bg-transparent">
       <Image
         src={footerImage}
         alt="AEP UCR Inland Empire Chapter Footer"
