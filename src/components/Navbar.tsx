@@ -24,7 +24,7 @@ const Navbar = () => {
   const handleClick = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
   return (
-    <div className="font-aep-urbanist fixed z-10 flex h-25 w-full items-center border-b-2 bg-white">
+    <div className="font-aep-urbanist fixed z-10 flex h-25 w-full items-center bg-white">
       <div className="flex flex-1 items-center p-4">
         <Link href="/" className="flex">
           <Image
@@ -37,13 +37,13 @@ const Navbar = () => {
           AEP
         </p>
       </div>
-      <nav className="hidden items-center gap-10 pr-8 text-2xl font-bold text-black md:flex">
+      <div className="hidden items-center gap-10 pr-8 text-2xl font-bold text-black md:flex">
         {navbarLinks.map(({ name, href }) => (
           <motion.div key={href} {...itemAnimation}>
             <Link href={href}>{name}</Link>
           </motion.div>
         ))}
-      </nav>
+      </div>
       <div className="mr-6 md:hidden">
         {isOpen ? (
           <IoMdClose size={32} onClick={closeMenu} className="cursor-pointer" />

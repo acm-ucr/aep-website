@@ -10,11 +10,11 @@ const Landing = () => {
         events, mentorship, and community engagement
       </p>
 
-      <div className="flex gap-12">
+      <div className="flex w-full justify-center gap-12">
         <motion.div whileHover={{ scale: 1.07 }}>
           <Link
             href="/about"
-            className="bg-aep-green-200 flex h-20 w-32 items-center justify-center rounded-2xl px-1 py-2 text-3xl font-normal text-black drop-shadow-lg transition hover:brightness-95 md:h-[150px] md:w-[350px] md:rounded-4xl md:px-2 md:py-4 md:text-[70px]"
+            className="bg-aep-green-200 flex h-20 w-32 items-center justify-center rounded-2xl px-1 py-2 text-3xl font-normal text-black drop-shadow-lg transition hover:brightness-95 md:h-38 md:w-68 md:rounded-4xl md:px-2 md:py-4 md:text-7xl"
           >
             About
           </Link>
@@ -23,7 +23,7 @@ const Landing = () => {
         <motion.div whileHover={{ scale: 1.07 }}>
           <Link
             href="/join"
-            className="bg-aep-green-200 flex h-20 w-32 items-center justify-center rounded-2xl px-1 py-2 text-3xl font-normal text-black drop-shadow-lg transition hover:brightness-95 md:h-[150px] md:w-[350px] md:rounded-4xl md:px-2 md:py-4 md:text-[70px]"
+            className="bg-aep-green-200 flex h-20 w-32 items-center justify-center rounded-2xl px-1 py-2 text-3xl font-normal text-black drop-shadow-lg transition hover:brightness-95 md:h-38 md:w-68 md:rounded-4xl md:px-2 md:py-4 md:text-7xl"
           >
             Join
           </Link>

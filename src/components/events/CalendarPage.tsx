@@ -5,10 +5,10 @@ import Clouds from "@/public/Events/clouds.webp";
 
 const CalendarPage = () => {
   return (
-    <div className="bg-aep-blue-500 relative">
+    <div className="bg-aep-blue-500 relative mb-5 pt-20">
       <Image
         src={Clouds}
-        className="absolute z-0 flex h-full w-full justify-self-center object-cover"
+        className="absolute flex h-full w-full justify-self-center object-cover"
         alt="clouds"
       />
       <div className="relative z-5">
